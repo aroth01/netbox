@@ -97,6 +97,7 @@ class Command(BaseCommand):
                 'id': uuid.uuid4()
             }),
             commit=commit,
+            name=script_name
         )
 
         logger.info(f"Script completed in {job.duration}")
